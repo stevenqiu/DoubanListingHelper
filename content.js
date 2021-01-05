@@ -188,11 +188,7 @@ let collectSpotifyMeta=() =>{
         'date'          : document.getElementsByClassName("f6a6c11d18da1af699a0464367e2189a-scss")[0].textContent.trim(),
         'label'         : document.getElementsByClassName("ba7f7eeadfc8a4912c6f6c1b1a71e236")[0].children[0].textContent.trim().substring(6, ), 
         'numberOfDiscs' : null,
-        'isrc'          : null,
-        'tracks'        : Array.from(document.getElementsByClassName('da0bc4060bb1bdb4abb8e402916af32e-scss standalone-ellipsis-one-line _8a9c5cc886805907de5073b8ebc3acd8-scss')).map((ele) =>{
-                            return ele.textContent.replaceAll(/[\n\t ]+/g,' ')
-                        }).join('\n').trim(), 
-                        
+        'isrc'          : null,                        
         'description'   : null,
         'imgUrl'        : document.getElementsByClassName('e606f708ec76d36e4cf363817b6b2ffd-scss').children[0].href
     }
